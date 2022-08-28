@@ -1,0 +1,35 @@
+{
+  "name": "reqesm",
+  "version": "0.0.1",
+  "description": "Synchronously Require ES6 Modules in NodeJS. Don't use in Production. A workaround for \"Error [ERR_REQUIRE_ESM]: require() of ES Module not supported.\"",
+  "main": "./reqesm.js",
+  "files": [
+    "reqesm.js"
+  ],
+  "scripts": {
+    "test:rflag": "node -r ./reqesm.js test.rflag.js",
+    "test:rtop": "node test.rtop.js",
+    "test": "npm run test:rflag && npm run test:rtop"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielJDufour/reqesm.git"
+  },
+  "keywords": [
+    "esm",
+    "import",
+    "module",
+    "require"
+  ],
+  "author": "Daniel J. Dufour",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/DanielJDufour/reqesm/issues"
+  },
+  "homepage": "https://github.com/DanielJDufour/reqesm#readme",
+  "devDependencies": {
+    "deasync": "^0.1.28",
+    "flug": "^2.3.1",
+    "quick-lru": "^6.1.1"
+  }
+}
