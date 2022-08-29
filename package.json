@@ -1,6 +1,6 @@
 {
   "name": "require-esm-deasync",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Synchronously Require ES6 Modules in NodeJS. Don't use in Production. A workaround for \"Error [ERR_REQUIRE_ESM]: require() of ES Module not supported.\"",
   "main": "./require-esm-deasync.js",
   "files": [
