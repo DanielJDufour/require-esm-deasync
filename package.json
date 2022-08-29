@@ -1,19 +1,21 @@
 {
-  "name": "reqesm",
+  "name": "require-esm-deasync",
   "version": "0.0.1",
   "description": "Synchronously Require ES6 Modules in NodeJS. Don't use in Production. A workaround for \"Error [ERR_REQUIRE_ESM]: require() of ES Module not supported.\"",
-  "main": "./reqesm.js",
+  "main": "./require-esm-deasync.js",
   "files": [
-    "reqesm.js"
+    "require-esm-deasync.js"
   ],
   "scripts": {
-    "test:rflag": "node -r ./reqesm.js test.rflag.js",
+    "format": "npx prettier --write *.js *.ts",
+    "test:rflag": "node -r ./require-esm-deasync.js test.rflag.js",
     "test:rtop": "node test.rtop.js",
-    "test": "npm run test:rflag && npm run test:rtop"
+    "test:ts-node": "npx ts-node -r ./require-esm-deasync.js ./test.ts-node.ts",
+    "test": "npm run test:rflag && npm run test:rtop && npm run test:ts-node"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DanielJDufour/reqesm.git"
+    "url": "git+https://github.com/DanielJDufour/require-esm-deasync.git"
   },
   "keywords": [
     "esm",
@@ -24,9 +26,9 @@
   "author": "Daniel J. Dufour",
   "license": "CC0-1.0",
   "bugs": {
-    "url": "https://github.com/DanielJDufour/reqesm/issues"
+    "url": "https://github.com/DanielJDufour/require-esm-deasync/issues"
   },
-  "homepage": "https://github.com/DanielJDufour/reqesm#readme",
+  "homepage": "https://github.com/DanielJDufour/require-esm-deasync#readme",
   "devDependencies": {
     "deasync": "^0.1.28",
     "flug": "^2.3.1",
